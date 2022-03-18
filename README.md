@@ -12,7 +12,9 @@ En una municipalidad otorgan planes de pagos a los contribuyentes que adeudan im
 
 
 -La municipalidad necesita un software que le permita registrar los datos de todos los planes emitidos y de los pagos recibidos. 
+
 -Asimismo el software debe poder calcular el importe de los intereses adicionales a partir de la cantidad de días de demora.
+
 -Se debe desarrollar un programa en Java que solicite por teclado los datos de los planes y de los pagos y luego de finalizada la carga informe:
     * Cantidad de planes pagados en su totalidad (es decir, que tengan tantos pagos recibidos como la cantidad de cuotas pactadas)
     * Sumatoria de las deudas registradas
