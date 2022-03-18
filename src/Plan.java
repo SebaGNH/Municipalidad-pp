@@ -69,5 +69,12 @@ public class Plan {
     }
     
     
-    
+    //Pagos por contribuyente
+    public String getPagoPorContribuyente(){
+        String listaPagos = "";
+        for (int i = 0; i < pagos.length; i++) {
+            listaPagos += "\n"+(i+1) +"- "+ pagos[i].getImportePagado();
+        }
+        return listaPagos;
+    }
 }

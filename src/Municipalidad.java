@@ -37,6 +37,14 @@ public class Municipalidad {
     }
    
     
-    
-    
+    //Listado de todos los pagos efectuados por un contribuyente en particular
+    public String getListadoPagosPorUnContribuyente(String nombreContribuyente){
+        String listadoPagos = "";
+        for (Plan p : planes) {
+            if (nombreContribuyente == p.getNombreContribuyente()) {
+                listadoPagos = p.getPagoPorContribuyente();
+            }
+        }
+        return listadoPagos;
+    }
 }

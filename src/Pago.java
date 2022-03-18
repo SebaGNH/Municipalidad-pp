@@ -41,7 +41,4 @@ public class Pago {
     public String toString() {
         return "Pago{" + "demora=" + demora + ", importePagado=" + importePagado + ", importeInteresesAdicionales=" + importeInteresesAdicionales + '}';
     }
-    
-    
-    
 }
