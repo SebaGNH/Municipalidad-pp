@@ -73,8 +73,20 @@ public class Plan {
     public String getPagoPorContribuyente(){
         String listaPagos = "";
         for (int i = 0; i < pagos.length; i++) {
-            listaPagos += "\n"+(i+1) +"- "+ pagos[i].getImportePagado();
+            if (pagos[i] !=null) {
+                listaPagos += "\n"+(i+1) +"- "+ pagos[i].getImportePagado();
+            }            
         }
         return listaPagos;
+    }
+    
+    public float getSumatoriaIntereses(){
+        float sumatoriaIntereses = 0f;
+            for (Pago p : pagos) {
+                if (p != null) {
+                   sumatoriaIntereses += p.getImporteInteresesAdicionales();
+                }
+        }
+        return sumatoriaIntereses;
     }
 }

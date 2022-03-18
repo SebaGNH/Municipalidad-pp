@@ -47,4 +47,18 @@ public class Municipalidad {
         }
         return listadoPagos;
     }
+    
+    
+    //Promedio general de intereses adicionales cobrados
+    public float getPromedioInteresesAdicionales(){
+        float sumatoriaIntereses = 0;
+        int contadorPlanes = 0;
+        for (Plan p : planes) {
+            sumatoriaIntereses += p.getSumatoriaIntereses();
+            contadorPlanes ++;
+        }
+        return sumatoriaIntereses / contadorPlanes;
+    }
+    
+    
 }
